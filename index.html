@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,58 +9,85 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>Hair Loss Solutions</h1>
-        <nav>
-            <a href="#understanding">Understanding Hair Loss</a>
-            <a href="#treatment">Treatment Options</a>
-            <a href="#survey">Take the Survey</a>
-            <a href="#method">Our Method</a>
-            <a href="#before-after">Before & After</a>
-        </nav>
+        <div class="container">
+            <h1>Hair Loss Solutions</h1>
+            <nav>
+                <a href="#understanding">Understanding Hair Loss</a>
+                <a href="#treatment">Treatment Options</a>
+                <a href="#survey">Take the Survey</a>
+                <a href="#method">Our Method</a>
+                <a href="#before-after">Before & After</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Find Your Path to Healthy Hair</h2>
+            <p>Understand the causes, explore treatments, and discover a method that works for you.</p>
+            <a href="#survey" class="cta-button">Take the Survey</a>
+        </div>
+    </section>
+
     <!-- Understanding Hair Loss -->
-    <section id="understanding">
-        <h2>Understanding Hair Loss</h2>
-        <p>Hair loss can be caused by genetic factors, hormonal imbalances, stress, medical conditions, and lifestyle choices. Identifying the root cause is the first step toward effective treatment.</p>
+    <section id="understanding" class="content-section">
+        <div class="container">
+            <h2>Understanding Hair Loss</h2>
+            <p>Hair loss affects millions of people worldwide and can be caused by genetics, hormonal imbalances, medical conditions, and lifestyle factors. Learning about the root causes is the first step toward effective treatment.</p>
+            <a href="understanding-hair-loss.html" class="read-more">Read the Full Article</a>
+        </div>
     </section>
 
     <!-- Treatment Options -->
-    <section id="treatment">
-        <h2>Treatment Options</h2>
-        <p>Explore various solutions such as medications like Minoxidil and Finasteride, non-surgical options like PRP therapy, and surgical procedures such as hair transplants. Each treatment has its own effectiveness and considerations.</p>
+    <section id="treatment" class="content-section">
+        <div class="container">
+            <h2>Treatment Options</h2>
+            <p>From medications like Minoxidil and Finasteride to PRP therapy and hair transplants, explore the treatments that can help restore your confidence. Each option comes with its own benefits and considerations.</p>
+            <a href="treatment-options.html" class="read-more">Read the Full Article</a>
+        </div>
     </section>
 
     <!-- Survey -->
-    <section id="survey">
-        <h2>Take the Survey</h2>
-        <p>Help us understand your hair loss better by completing our quick survey.</p>
-        <iframe src="https://forms.gle/4ybVou8CxfwVqzJB7" width="100%" height="600" frameborder="0"></iframe>
+    <section id="survey" class="content-section">
+        <div class="container">
+            <h2>Take the Survey</h2>
+            <p>Help us understand your hair loss better by completing our quick survey. This will enable us to provide tailored recommendations for your needs.</p>
+            <div class="survey-embed">
+                <iframe src="https://docs.google.com/forms/d/e/4ybVou8CxfwVqzJB7/viewform?embedded=true" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
 
     <!-- Our Method -->
-    <section id="method">
-        <h2>Our Method</h2>
-        <ul>
-            <li><strong>Backed by Data and Science:</strong> We rely on proven treatments and robust research to guide our recommendations.</li>
-            <li><strong>Not a One-Time Fix:</strong> Effective hair loss management requires continuous monitoring and adjustments.</li>
-            <li><strong>Personalized Care:</strong> Using advanced technology, we tailor treatments to meet your unique needs.</li>
-        </ul>
+    <section id="method" class="content-section">
+        <div class="container">
+            <h2>Our Method</h2>
+            <ul>
+                <li><strong>Backed by Data and Science:</strong> We rely on proven treatments and research to guide our recommendations.</li>
+                <li><strong>Not a One-Time Fix:</strong> Effective hair loss management requires continuous monitoring and adjustments.</li>
+                <li><strong>Personalized Care:</strong> Using advanced technology, we tailor treatments to meet your unique needs.</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Before and After Pictures -->
-    <section id="before-after">
-        <h2>Before & After</h2>
-        <p>See the results of real hair loss treatments.</p>
-        <div class="gallery">
-            <img src="before1.jpg" alt="Before treatment">
-            <img src="after1.jpg" alt="After treatment">
+    <!-- Before and After -->
+    <section id="before-after" class="content-section">
+        <div class="container">
+            <h2>Before & After</h2>
+            <p>See real results from individuals who have successfully managed hair loss.</p>
+            <div class="gallery">
+                <img src="images/before1.jpg" alt="Before treatment">
+                <img src="images/after1.jpg" alt="After treatment">
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Hair Loss Solutions. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 Hair Loss Solutions. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
