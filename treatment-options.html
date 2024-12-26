@@ -3,89 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treatment Options for Hair Loss</title>
+    <title>Hair Loss Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Treatment Options</h1>
+            <h1>Hair Loss Solutions</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="understanding-hair-loss.html">Understanding Hair Loss</a>
-                <a href="#prp">PRP Therapy</a>
-                <a href="#medications">Medications</a>
-                <a href="#transplants">Hair Transplants</a>
+                <a href="#understanding">Understanding Hair Loss</a>
+                <a href="#treatment">Treatment Options</a>
+                <a href="#survey">Take the Survey</a>
+                <a href="#method">Our Method</a>
+                <a href="#before-after">Before & After</a>
             </nav>
         </div>
     </header>
 
-    <!-- Introduction -->
-    <section class="intro">
-        <div class="container">
-            <h2>Explore Effective Treatments</h2>
-            <p>Hair loss can often be managed with the right treatments. Below, we delve into proven options, their efficacy, and considerations for each.</p>
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/hero-bg.jpg'); background-size: cover; color: white; text-align: center; padding: 50px 0;">
+        <div class="hero-text">
+            <h2>Find Your Path to Healthy Hair</h2>
+            <p>Understand the causes, explore treatments, and discover a method that works for you.</p>
+            <a href="#survey" class="cta-button">Take the Survey</a>
         </div>
     </section>
 
-    <!-- Medications -->
-    <section id="medications" class="content-section">
+    <!-- Understanding Hair Loss -->
+    <section id="understanding" class="content-section" style="padding: 40px 20px;">
         <div class="container">
-            <h2>Medications</h2>
-            <p>Medications such as Finasteride, Dutasteride, and Minoxidil are commonly prescribed for hair loss. Here’s what the research says:</p>
-            <h3>Finasteride vs. Dutasteride</h3>
+            <h2>Understanding Hair Loss</h2>
+            <p>Hair loss affects millions of people worldwide and can be caused by genetics, hormonal imbalances, medical conditions, and lifestyle factors. Learning about the root causes is the first step toward effective treatment.</p>
+            <a href="understanding-hair-loss.html" class="read-more">Read the Full Article</a>
+        </div>
+    </section>
+
+    <!-- Treatment Options -->
+    <section id="treatment" class="content-section" style="background-color: #f9f9f9; padding: 40px 20px;">
+        <div class="container">
+            <h2>Treatment Options</h2>
+            <p>From medications like Minoxidil and Finasteride to PRP therapy and hair transplants, explore the treatments that can help restore your confidence. Each option comes with its own benefits and considerations.</p>
+            
+            <!-- Comparison Chart -->
+            <canvas id="efficacyChart" width="400" height="200"></canvas>
+            <script>
+                const ctx = document.getElementById('efficacyChart').getContext('2d');
+                const efficacyChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Finasteride', 'Dutasteride', 'Minoxidil'],
+                        datasets: [{
+                            label: 'Efficacy (%)',
+                            data: [65, 75, 60],
+                            backgroundColor: ['#4CAF50', '#2196F3', '#FFC107']
+                        }]
+                    }
+                });
+            </script>
+
+            <a href="treatment-options.html" class="read-more">Read the Full Article</a>
+        </div>
+    </section>
+
+    <!-- Survey -->
+    <section id="survey" class="content-section" style="padding: 40px 20px;">
+        <div class="container">
+            <h2>Take the Survey</h2>
+            <p>Help us understand your hair loss better by completing our quick survey. This will enable us to provide tailored recommendations for your needs.</p>
+            <div class="survey-embed">
+                <iframe src="https://docs.google.com/forms/d/e/4ybVou8CxfwVqzJB7/viewform?embedded=true" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Method -->
+    <section id="method" class="content-section" style="background-color: #f9f9f9; padding: 40px 20px;">
+        <div class="container">
+            <h2>Our Method</h2>
             <ul>
-                <li><strong>Finasteride:</strong> Shown to reduce hair loss in 65% of men over 2 years with minimal side effects like decreased libido (around 1.8% of users).</li>
-                <li><strong>Dutasteride:</strong> More effective than Finasteride, with the Indian Journal of Dermatology reporting better hair density outcomes. However, it is not FDA-approved for hair loss in the USA but is widely used in Korea and Japan.</li>
-            </ul>
-            <h3>Minoxidil</h3>
-            <p>Topical Minoxidil stimulates hair growth by improving blood flow to hair follicles. Clinical trials show:</p>
-            <ul>
-                <li><strong>Men:</strong> 40-60% experience visible improvement within 4-6 months.</li>
-                <li><strong>Women:</strong> 60% report hair regrowth in areas of thinning.</li>
-                <li><strong>Side Effects:</strong> Scalp irritation and shedding during the initial weeks of use.</li>
+                <li><strong>Backed by Data and Science:</strong> We rely on proven treatments and research to guide our recommendations.</li>
+                <li><strong>Not a One-Time Fix:</strong> Effective hair loss management requires continuous monitoring and adjustments.</li>
+                <li><strong>Personalized Care:</strong> Using advanced technology, we tailor treatments to meet your unique needs.</li>
             </ul>
         </div>
     </section>
 
-    <!-- PRP Therapy -->
-    <section id="prp" class="content-section">
+    <!-- Before and After -->
+    <section id="before-after" class="content-section" style="padding: 40px 20px;">
         <div class="container">
-            <h2>PRP Therapy</h2>
-            <p>Platelet-Rich Plasma (PRP) therapy involves injecting your own plasma into the scalp to stimulate hair growth. According to the Indian Journal of Dermatology:</p>
-            <ul>
-                <li>Men showed a statistically significant increase in hair density.</li>
-                <li>Women did not show statistically significant results.</li>
-            </ul>
-            <p>PRP often requires 3-6 sessions for noticeable results and can be used as a complementary treatment to hair transplants.</p>
-        </div>
-    </section>
-
-    <!-- Hair Transplants -->
-    <section id="transplants" class="content-section">
-        <div class="container">
-            <h2>Hair Transplants</h2>
-            <p>Hair transplantation is a surgical solution for restoring hair in areas of significant thinning or baldness. Key facts include:</p>
-            <ul>
-                <li><strong>Methods:</strong> Follicular Unit Transplantation (FUT) and Follicular Unit Extraction (FUE).</li>
-                <li><strong>Success Rate:</strong> 85-95% graft survival rate reported in clinical studies.</li>
-                <li><strong>Considerations:</strong> Requires downtime, and results take 6-12 months to fully manifest.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Conclusion -->
-    <section class="cta">
-        <div class="container">
-            <h2>Find the Right Treatment for You</h2>
-            <p>Hair loss treatment requires a personalized approach. Take our survey to discover the best options tailored to your needs.</p>
-            <a href="index.html#survey" class="cta-button">Take the Survey</a>
+            <h2>Before & After</h2>
+            <p>See real results from individuals who have successfully managed hair loss.</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/before1.jpg" alt="Before"></div>
+                    <div class="swiper-slide"><img src="images/after1.jpg" alt="After"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <script>
+                const swiper = new Swiper('.swiper-container', {
+                    pagination: { el: '.swiper-pagination', clickable: true }
+                });
+            </script>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
         <div class="container">
             <p>© 2024 Hair Loss Solutions. All rights reserved.</p>
         </div>
