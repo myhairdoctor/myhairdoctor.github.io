@@ -3,113 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Loss Solutions</title>
+    <title>Treatment Options for Hair Loss</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Hair Loss Solutions</h1>
+            <h1>Treatment Options for Hair Loss</h1>
             <nav>
-                <a href="#understanding">Understanding Hair Loss</a>
-                <a href="#treatment">Treatment Options</a>
-                <a href="#survey">Take the Survey</a>
-                <a href="#method">Our Method</a>
-                <a href="#before-after">Before & After</a>
+                <a href="index.html">Home</a>
+                <a href="treatment-options.html">Treatment Options</a>
+                <a href="survey-link.html">Take the Survey</a>
+                <a href="#medications">Medications</a>
+                <a href="#procedures">Procedures</a>
+                <a href="#lifestyle">Lifestyle Changes</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: url('images/hero-bg.jpg'); background-size: cover; color: white; text-align: center; padding: 50px 0;">
+    <section class="hero" style="background-image: url('images/treatment-hero.jpg'); background-size: cover; color: white; text-align: center; padding: 50px 0;">
         <div class="hero-text">
-            <h2>Find Your Path to Healthy Hair</h2>
-            <p>Understand the causes, explore treatments, and discover a method that works for you.</p>
-            <a href="#survey" class="cta-button">Take the Survey</a>
+            <h2>Discover Effective Solutions to Combat Hair Loss</h2>
+            <p>Explore medications, procedures, and lifestyle changes that can help restore your hair and confidence.</p>
         </div>
     </section>
 
-    <!-- Understanding Hair Loss -->
-    <section id="understanding" class="content-section" style="padding: 40px 20px;">
+    <!-- Medications Section -->
+    <section id="medications" class="content-section" style="padding: 40px 20px;">
         <div class="container">
-            <h2>Understanding Hair Loss</h2>
-            <p>Hair loss affects millions of people worldwide and can be caused by genetics, hormonal imbalances, medical conditions, and lifestyle factors. Learning about the root causes is the first step toward effective treatment.</p>
-            <a href="understanding-hair-loss.html" class="read-more">Read the Full Article</a>
+            <h2>Medications</h2>
+            <p>Several FDA-approved medications are available to treat hair loss:</p>
+            <h3>Minoxidil</h3>
+            <p>A topical treatment that promotes hair growth by improving blood flow to the scalp. Suitable for both men and women.</p>
+            <h3>Finasteride</h3>
+            <p>An oral medication that reduces levels of dihydrotestosterone (DHT), preventing hair follicle shrinkage. Primarily used for male-pattern baldness.</p>
+            <h3>Spironolactone</h3>
+            <p>A medication for women that blocks androgen receptors, reducing hair loss caused by hormonal imbalances.</p>
         </div>
     </section>
 
-    <!-- Treatment Options -->
-    <section id="treatment" class="content-section" style="background-color: #f9f9f9; padding: 40px 20px;">
+    <!-- Procedures Section -->
+    <section id="procedures" class="content-section" style="background-color: #f9f9f9; padding: 40px 20px;">
         <div class="container">
-            <h2>Treatment Options</h2>
-            <p>From medications like Minoxidil and Finasteride to PRP therapy and hair transplants, explore the treatments that can help restore your confidence. Each option comes with its own benefits and considerations.</p>
-            
-            <!-- Comparison Chart -->
-            <canvas id="efficacyChart" width="400" height="200"></canvas>
-            <script>
-                const ctx = document.getElementById('efficacyChart').getContext('2d');
-                const efficacyChart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: ['Finasteride', 'Dutasteride', 'Minoxidil'],
-                        datasets: [{
-                            label: 'Efficacy (%)',
-                            data: [65, 75, 60],
-                            backgroundColor: ['#4CAF50', '#2196F3', '#FFC107']
-                        }]
-                    }
-                });
-            </script>
-
-            <a href="treatment-options.html" class="read-more">Read the Full Article</a>
+            <h2>Procedures</h2>
+            <p>Advanced procedures offer long-term solutions for hair restoration:</p>
+            <h3>Hair Transplant Surgery</h3>
+            <p>Follicular unit transplantation (FUT) and follicular unit extraction (FUE) techniques involve relocating hair follicles to thinning areas.</p>
+            <h3>Platelet-Rich Plasma (PRP) Therapy</h3>
+            <p>A non-surgical treatment that uses your blood's platelets to stimulate hair growth and improve follicle health.</p>
+            <h3>Low-Level Laser Therapy (LLLT)</h3>
+            <p>A painless procedure that uses light therapy to enhance cell activity and hair growth.</p>
         </div>
     </section>
 
-    <!-- Survey -->
-    <section id="survey" class="content-section" style="padding: 40px 20px;">
+    <!-- Lifestyle Changes Section -->
+    <section id="lifestyle" class="content-section" style="padding: 40px 20px;">
         <div class="container">
-            <h2>Take the Survey</h2>
-            <p>Help us understand your hair loss better by completing our quick survey. This will enable us to provide tailored recommendations for your needs.</p>
-            <div class="survey-embed">
-                <iframe src="https://docs.google.com/forms/d/e/4ybVou8CxfwVqzJB7/viewform?embedded=true" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Method -->
-    <section id="method" class="content-section" style="background-color: #f9f9f9; padding: 40px 20px;">
-        <div class="container">
-            <h2>Our Method</h2>
-            <ul>
-                <li><strong>Backed by Data and Science:</strong> We rely on proven treatments and research to guide our recommendations.</li>
-                <li><strong>Not a One-Time Fix:</strong> Effective hair loss management requires continuous monitoring and adjustments.</li>
-                <li><strong>Personalized Care:</strong> Using advanced technology, we tailor treatments to meet your unique needs.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Before and After -->
-    <section id="before-after" class="content-section" style="padding: 40px 20px;">
-        <div class="container">
-            <h2>Before & After</h2>
-            <p>See real results from individuals who have successfully managed hair loss.</p>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/before1.jpg" alt="Before"></div>
-                    <div class="swiper-slide"><img src="images/after1.jpg" alt="After"></div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <script>
-                const swiper = new Swiper('.swiper-container', {
-                    pagination: { el: '.swiper-pagination', clickable: true }
-                });
-            </script>
+            <h2>Lifestyle Changes</h2>
+            <p>Adopting healthy habits can improve overall hair health:</p>
+            <h3>Diet and Nutrition</h3>
+            <p>Consume a balanced diet rich in vitamins, minerals, and proteins to support hair growth.</p>
+            <h3>Stress Management</h3>
+            <p>Practice relaxation techniques like yoga and meditation to minimize stress-induced hair loss.</p>
+            <h3>Scalp Care</h3>
+            <p>Maintain scalp hygiene and use gentle products to avoid irritation and hair breakage.</p>
         </div>
     </section>
 
